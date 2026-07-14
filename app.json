@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Raby Foundation",
+    "slug": "raby-foundation",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.rabyfoundation.mobile",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to record your story.",
+        "NSMicrophoneUsageDescription": "This app needs microphone access to record your story.",
+        "NSPhotoLibraryUsageDescription": "This app needs photo library access to upload media."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "org.rabyfoundation.mobile"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34
+          },
+          "ios": {
+            "deploymentTarget": "13.4"
+          }
+        }
+      ]
+    ]
+  }
+}
