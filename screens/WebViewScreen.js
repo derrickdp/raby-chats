@@ -99,6 +99,15 @@ export default function WebViewScreen() {
     );
   }
 
+  if (Platform.OS === 'web') {
+    return (
+      <iframe 
+        src={{ uri: SENJA_URL }}
+        style={styles.webFrame} 
+        title="Web Content"
+      />
+    );
+  }
   return (
     <SafeAreaView style={styles.container}>
       <WebView
