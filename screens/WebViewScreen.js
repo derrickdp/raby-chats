@@ -102,7 +102,7 @@ export default function WebViewScreen() {
   if (Platform.OS === 'web') {
     return (
       <iframe 
-        src={{ uri: SENJA_URL }}
+        src="https://senja.io/p/raby-testimonials/r/aRwfGQ"
         style={styles.webFrame} 
         title="Web Content"
       />
