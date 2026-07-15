@@ -6,40 +6,46 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+    "extra": {
+      "eas": {
+        "projectId": "376f0fae-af34-45c4-a2f2-19b3ed274ac1"
+      }
+    }
+  },
+  "ios": {
+    "supportsTablet": true,
+    "bundleIdentifier": "org.rabyfoundation.mobile",
+    "infoPlist": {
+      "NSCameraUsageDescription": "This app needs camera access to record your story.",
+      "NSMicrophoneUsageDescription": "This app needs microphone access to record your story.",
+      "NSPhotoLibraryUsageDescription": "This app needs photo library access to upload media."
+    }
+  },
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/adaptive-icon.jpg",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "org.rabyfoundation.mobile",
-      "infoPlist": {
-        "NSCameraUsageDescription": "This app needs camera access to record your story.",
-        "NSMicrophoneUsageDescription": "This app needs microphone access to record your story.",
-        "NSPhotoLibraryUsageDescription": "This app needs photo library access to upload media."
-      }
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "org.rabyfoundation.mobile"
-    },
-    "plugins": [
-      [
-        "expo-build-properties",
-        {
-          "android": {
-            "compileSdkVersion": 34,
-            "targetSdkVersion": 34
-          },
-          "ios": {
-            "deploymentTarget": "16.4"
-          }
+    "package": "org.rabyfoundation.mobile"
+  },
+  "plugins": [
+    [
+      "expo-build-properties",
+      {
+        "android": {
+          "compileSdkVersion": 36,
+          "targetSdkVersion": 36
+        },
+        "ios": {
+          "deploymentTarget": "16.4"
         }
-      ]
+      }
     ]
-  }
+  ],
+  "extra": {
+    "eas": {
+      "projectId": "43769e30-a428-47e9-af8d-ec6f4f0f5786"
+    }
+  },
+  "owner": "derrickdps-team"
 }

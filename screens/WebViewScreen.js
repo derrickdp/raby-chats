@@ -11,7 +11,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { WebView } from 'react-native-webview';
 import NetInfo from '@react-native-community/netinfo';
-import * as Permissions from 'expo-permissions';
+// import * as Permissions from 'expo-permissions';
 
 export default function WebViewScreen() {
   const [isLoading, setIsLoading] = useState(true);
