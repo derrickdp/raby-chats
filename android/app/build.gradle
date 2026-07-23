@@ -89,7 +89,7 @@ android {
 
     namespace 'com.derrickdp.rabyfoundation'
     defaultConfig {
-        applicationId 'com.derrickdp.rabyfoundation'
+        applicationId 'com.derrickdp.rabyfoundation.rabychats'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

@@ -6,58 +6,47 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "owner": "derrickdps-team",
+    "android": {
+      "package": "com.derrickdp.rabyfoundation.rabychats",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.jpg",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.derrickdp.rabyfoundation.rabychats",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to record your story.",
+        "NSMicrophoneUsageDescription": "This app needs microphone access to record your story.",
+        "NSPhotoLibraryUsageDescription": "This app needs photo library access to upload media."
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36
+          },
+          "ios": {
+            "deploymentTarget": "16.4"
+          }
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "376f0fae-af34-45c4-a2f2-19b3ed274ac1"
       }
-    },
-    "android": {
-      "package": "com.derrickdp.rabyfoundation.rabychats"
-    },
-    "ios": {
-      "bundleIdentifier": "com.derrickdp.rabyfoundation.rabychats"
     }
-  },
-  "ios": {
-    "supportsTablet": true,
-    "bundleIdentifier": "com.derrickdp.rabyfoundation.rabychats",
-    "infoPlist": {
-      "NSCameraUsageDescription": "This app needs camera access to record your story.",
-      "NSMicrophoneUsageDescription": "This app needs microphone access to record your story.",
-      "NSPhotoLibraryUsageDescription": "This app needs photo library access to upload media."
-    }
-  },
-  "android": {
-    "permissions" : [
-      "android.permission.CAMERA",
-      "android.permission.RECORD_AUDIO",
-      "android.permission.READ_EXTERNAL_STORAGE",
-      "android.permission.WRITE_EXTERNAL_STORAGE"
-    ],
-    "adaptiveIcon": {
-      "foregroundImage": "./assets/adaptive-icon.jpg",
-      "backgroundColor": "#ffffff"
-    },
-    "package": "org.rabyfoundation.mobile"
-  },
-  "plugins": [
-    [
-      "expo-build-properties",
-      {
-        "android": {
-          "compileSdkVersion": 36,
-          "targetSdkVersion": 36
-        },
-        "ios": {
-          "deploymentTarget": "16.4"
-        }
-      }
-    ]
-  ],
-  "extra": {
-    "eas": {
-      "projectId": "43769e30-a428-47e9-af8d-ec6f4f0f5786"
-    }
-  },
-  "owner": "derrickdps-team"
+  }
 }
