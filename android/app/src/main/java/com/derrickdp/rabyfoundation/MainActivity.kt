@@ -1,4 +1,4 @@
-package org.rabyfoundation.mobile
+package com.derrickdp.rabyfoundation
 
 import android.os.Build
 import android.os.Bundle
